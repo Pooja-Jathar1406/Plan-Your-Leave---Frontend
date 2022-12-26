@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/ContactUs.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Js/ContactUs.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid" id="container">
+      <header>
+        <nav class="navbar navbar-expand-lg" id="header">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="/Mini Project/Attendance and leave management/Images/LOGO.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler m-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse align-items-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/Mini%20Project/Attendance%20and%20leave%20management/Html/HomePage.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="http://127.0.0.1:5500/Mini%20Project/Attendance%20and%20leave%20management/Html/LeaveApplication.html"
+                  >Leaves</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="http://127.0.0.1:5500/Mini%20Project/Attendance%20and%20leave%20management/Html/FillAttendance.html"
+                  target="_blank"
+                >
+                  Attendance</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="http://127.0.0.1:5500/Mini%20Project/Attendance%20and%20leave%20management/Html/AboutUs.html"
+                  target="_blank"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a
+                  class="nav-link"
+                  href=" http://127.0.0.1:5500/Mini%20Project/Attendance%20and%20leave%20management/Html/ContactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- page heading -->
+        <div class="col-md-5 heading">
+          <div class="row">
+            <div class="col-2">
+              <div class="pgicon"><img src="../Images/img14.jpg" alt="" /></div>
+            </div>
+            <div class="col-10">
+              <h3>Contact us</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-md-12">
+          <form onclick="return validateForm()" action="../Html/HomePage.html">
+            <div align="center">
+              <table style="padding: 30px">
+                <tr>
+                  <th>Name:</th>
+                  <td>
+                    <input id="name" type="text" placeholder="Name" />
+                    <pre id="nameError"></pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>Email Id:</th>
+                  <td>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="xyz@gmail.com"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Mobile No:</th>
+                  <td>
+                    <input id="mobile" type="text" placeholder="Enter number" />
+                    <pre id="mobileError"></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Subject:</th>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <th>Message:</th>
+                  <td> 
+                    <textarea
+                      type="textArea"
+                      id="form6Example5"
+                      class="form-control"
+                      rows="3"
+                    >
+                    </textarea>
+                  </td>
+                </tr>
+              </table>
+              <input type="button" value="Submit" class="SubmitBtn" />
+            </div>
+          </form>
+        </div>
+      </div> -->
+      -->
+      <!-- signupcopied -->
+      <div class="row">
+        <div class="col-md-12">
+          <form onsubmit="return validateForm()" action="..//Html/Login.html">
+            <!--  content here  -->
+            <div align="center">
+              <table>
+                <tr>
+                  <th>Name:</th>
+                  <td>
+                    <input
+                      id="username"
+                      type="text"
+                      placeholder="First Name"
+                      pattern="[a-z,A-Z]{4,20}"
+                    />
+                    <pre id="nameError" class="error"></pre>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>Email Id:</th>
+                  <td>
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="xyz@gmail.com"
+                      pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                    />
+                    <pre id="emailError" class="error" min="1"></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Mobile No:</th>
+                  <td>
+                    <input
+                      id="mobile"
+                      type="number"
+                      placeholder="Enter number"
+                    />
+                    <pre id="mobileError" class="error" min="1"></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Subject:</th>
+                  <td>
+                    <input
+                      type="text"
+                      id="subject"
+                      placeholder="Enter subject"
+                    />
+                    <pre id="subError" class="error" min="1"></pre>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Message:</th>
+                  <td>
+                    <textarea
+                      type="textArea"
+                      id="msg"
+                      class="form-control"
+                      rows="3"
+                    >
+                    </textarea>
+                    <pre id="msgError" class="error" min="1"></pre>
+                  </td>
+                </tr>
+              </table>
+              <br />
+              <div>
+                <button type="submit" class="SubmitBtn">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--  <div class="row">
+        <form action="">
+          <div align="center">
+            <table>
+              <tr>
+                <th>Name:</th>
+                <td>
+                  <input id="username" type="text" placeholder="First Name" />
+                </td>
+              </tr>
+
+              <tr>
+                <th>Email Id:</th>
+                <td>
+                  <input id="email" type="email" placeholder="xyz@gmail.com" />
+                </td>
+              </tr>
+              <tr>
+                <th>Mobile No:</th>
+                <td>
+                  <input id="mobile" type="text" placeholder="Enter number" />
+                </td>
+              </tr>
+              <tr>
+                <th>Subject:</th>
+                <td><input type="text" /></td>
+              </tr>
+              <tr>
+                <th>Message:</th>
+                <td>
+                   
+                  <textarea
+                    type="textArea"
+                    id="form6Example5"
+                    class="form-control"
+                    rows="3"
+                  >
+                  </textarea>
+                </td>
+              </tr>
+            </table>
+            <button class="SubmitBtn">
+              <a
+                class="SubmitBtn"
+                href="http://127.0.0.1:5500/Mini%20Project/Attendance%20and%20leave%20management/Html/Login.html"
+              >
+                Submit
+              </a>
+            </button>
+          </div>
+        </form>
+      </div> -->
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Approve Or Reject</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Template.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid" id="container">
+      <header>
+        <nav class="navbar navbar-expand-lg" id="header">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt="" /> </a>
+          <button
+            class="navbar-toggler m-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse align-items-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Leaves</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Attendance</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!-- page heading -->
+        <div class="col-md-6 heading">
+          <div class="row">
+            <div class="col-2">
+              <div class="pgicon"><img src="slog.jpg" alt="" /></div>
+            </div>
+            <div class="col-10">
+              <h3>Approve Or Reject Leave Requests</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-between">
+        <!--  content here  -->
+        <div align="center">
+          <table>
+            <tr>
+              <th>Employee Id</th>
+              <th>Name</th>
+              <th>From Date</th>
+              <th>To Date</th>
+              <th>No of Days</th>
+              <th>Approve/Reject</th>
+            </tr>
+            <tr>
+              <td>12186</td>
+              <td>Pooja Jathar</td>
+              <td>21/04/2209</td>
+              <td>23/08/2102</td>
+              <td>3</td>
+              <td>
+                <button>Approve</button>
+                <button>Reject</button>
+              </td>
+            </tr>
+            <tr>
+              <td>12326</td>
+              <td>Mrinali Fulzele</td>
+              <td>12/04/2122</td>
+              <td>23/12/2022</td>
+              <td>5</td>
+              <td>
+                <button>Approve</button>
+                <button>Reject</button>
+              </td>
+            </tr>
+            <tr>
+              <td>12786</td>
+              <td>Sarfraz Shaikh</td>
+              <td>01/01/2023</td>
+              <td>04/02/2023</td>
+              <td>8</td>
+              <td>
+                <button>Approve</button>
+                <button>Reject</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="footer bg-secondary border-success align-items-end"
+      id="footer"
+    >
+      this is footer
+    </footer>
+  </body>
+</html>

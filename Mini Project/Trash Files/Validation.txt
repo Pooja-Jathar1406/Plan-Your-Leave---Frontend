@@ -1,0 +1,65 @@
+function clearerrors() {
+  errors = document.getElementsByClassName("error")
+  for (let item of errors) {
+    item.innerHTML = ""
+  }
+}
+
+function validatePhone(input_str) {
+  var re = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/
+  return re.test(input_str)
+}
+function validateemail(input_str) {
+  //  var em = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var em = /\S+@\S+\.\S+/g
+  return em.test(input_str)
+}
+
+function validateForm() {
+  let username = document.getElementById("username")
+  let email = document.getElementById("email")
+  let mobile = document.getElementById("mobile")
+  let password = document.getElementById("password")
+  let cpassword = document.getElementById("cpassword")
+
+  var flag = true
+  clearerrors()
+
+  //user name validation
+  if (username.value == "") {
+    document.getElementById("nameError").innerHTML = "*username is empty"
+    flag = false
+  } else if (username.value.length < 4) {
+    document.getElementById("nameError").innerHTML = "*username is too small"
+    flag = false
+  }
+  //Email validation
+  if (email.value == "") {
+    document.getElementById("emailError").innerHTML = "*EmailId is empty"
+    flag = false
+  }
+  if (!validatePhone(email.value)) {
+    document.getElementById("emailError").innerHTML = "*Invalid EmailID"
+    flag = false
+  }
+
+  //mobile validation
+  if (!validatePhone(mobile.value)) {
+    document.getElementById("mobileError").innerHTML = "*Invalid mobile Number"
+    flag = false
+  }
+
+  //password validation
+  if (password.value.length < 6) {
+    document.getElementById("passError").innerHTML = "*Password is too short"
+    flag = false
+  }
+
+  if (cpassword.value !== password.value) {
+    document.getElementById("cpassError").innerHTML = "*Password does not match"
+    flag = false
+  }
+
+  //
+  return flag
+}
